@@ -4,3 +4,109 @@
   font-weight: 400;
   font-style: normal;
 }
+
+
+/* shared styles */
+.display-flex{
+  display: flex;
+}
+
+.color-1{
+    color: #FEA301;
+}
+
+.color-2{
+    color: #01ACFD;
+}
+
+.color-3{
+    color: #05D4DF;
+}
+
+.color-4{
+    color: #5D58EF;
+}
+
+
+
+/* nav styles */
+header{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.navbar{
+    max-width: 1160px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 140px;
+}
+
+.ins-container{
+    align-items: center;
+}
+
+.ins-logo{
+    max-width: 62px;
+    max-height: 62px;
+}
+
+.ins-name{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    padding: 17px 0px 15px 11px;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 32px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.nav-btn{
+    max-width: 197px;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+    background-color: #FEA301;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+
+/* responsive styles */
+@media screen and (min-width: 576px){
+    .hide{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .ins-name,
+    .nav-links-container,
+    .nav-btn{
+        display: none;
+    }
+
+    .navbar{
+        gap: 282px;
+        justify-content: center;
+        align-items: center;
+        max-width: 390px;
+        border: 0.5px solid #FEA301;
+    }
+
+    .ins-logo{
+        max-width: 46px;
+        max-height: 46px;
+    }
+}
