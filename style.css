@@ -37,6 +37,7 @@ header{
 
 .navbar{
     max-width: 1160px;
+    margin: 0px auto;
     justify-content: space-between;
     align-items: center;
     padding: 20px 140px;
@@ -82,6 +83,40 @@ header{
 
 
 
+/* banner styles */
+.banner{
+    max-width: 1160px;
+    margin: 0px auto;
+    align-items: center;
+    gap: 50px;
+}
+
+.banner-title{
+    color: #111;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.banner-description{
+    color: #111;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.banner-btn{
+    padding: 10px 47px;
+    border-radius: 12px;
+    border: none;
+    background-color: #111;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+
 /* responsive styles */
 @media screen and (min-width: 576px){
     .hide{
@@ -108,5 +143,47 @@ header{
     .ins-logo{
         max-width: 46px;
         max-height: 46px;
+    }
+
+    .banner{
+        max-width: 357px;
+        display: grid;
+        /* grid-template-columns: 1fr; */
+        /* grid-template-rows: 1fr; */
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+        gap: 20px;
+    }
+
+    .banner-content{
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+    }
+
+    .banner-title{
+        font-size: 2rem;
+        margin-bottom: 18px;
+    }
+
+    .banner-description{
+        font-size: 0.875rem;
+        margin-bottom: 18px;
+    }
+
+    .banner-btn{
+        padding: 6px 24px;
+        border-radius: 8px;
+        border: none;
+        background-color: #111;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .banner-img{
+        width: 100%;
+        margin-bottom: 0px;
     }
 }
