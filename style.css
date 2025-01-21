@@ -95,6 +95,14 @@ header{
     font-weight: 600;
 }
 
+.marquee-container{
+    max-width: 1160px;
+    margin: 0px auto;
+    color: #111;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
 
 
 /* banner styles */
@@ -528,6 +536,11 @@ header{
         align-items: center;
         max-width: 390px;
         border: 0.5px solid #FEA301;
+    }
+
+    .marquee-container{
+        max-width: 390px;
+        margin-top: 20px;
     }
 
     .ins-logo{
