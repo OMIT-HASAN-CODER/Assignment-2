@@ -5,6 +5,16 @@
   font-style: normal;
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+
+.hide{
+    display: none;
+}
+
 
 /* shared styles */
 .display-flex{
@@ -124,7 +134,10 @@ header{
 
 /* curriculums styles */
 .curriculums{
-    background-image: url('assets/bg.png');
+    background-image: url(assets/bg.png);
+    background-color: lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
     flex-direction: column;
 }
 
@@ -193,29 +206,36 @@ header{
     margin-bottom: 0px;
 }
 
-.read-more-1{
+.read-more-btn-1{
     color: #64C8FF;
+    background: none;
+    border: none;
     font-size: 0.9rem;
     font-weight: 700;
     margin-top: 32px;
     margin-bottom: 0px;
 }
 
-.read-more-2{
+.read-more-btn-2{
     color: #F0AA00;
+    background: none;
+    border: none;
     font-size: 0.9rem;
     font-weight: 700;
     margin-top: 32px;
     margin-bottom: 0px;
 }
 
-.read-more-3{
+.read-more-btn-3{
     color: #8700FF;
+    background: none;
+    border: none;
     font-size: 0.9rem;
     font-weight: 700;
     margin-top: 32px;
     margin-bottom: 0px;
 }
+
 .btn-container{
     display: flex;
     justify-content: center;
@@ -245,18 +265,24 @@ header{
 
 
 /* responsive styles */
-@media screen and (min-width: 576px){
+/* @media screen and (min-width: 576px){
     .hide{
         display: none;
     }
-}
+} */
+
 
 
 @media screen and (max-width: 576px){
     .ins-name,
     .nav-links-container,
-    .nav-btn{
+    .nav-btn,
+    .btn-container{
         display: none;
+    }
+
+    .menubar{
+        display: block;
     }
 
     .navbar{
@@ -272,6 +298,9 @@ header{
         max-height: 46px;
     }
 
+
+
+    /* banner styles */
     .banner{
         max-width: 357px;
         flex-direction: column-reverse;
@@ -307,6 +336,107 @@ header{
 
     .banner-img{
         width: 100%;
+        margin-bottom: 0px;
+    }
+
+
+
+    /* curriculums styles */
+    .curriculums{
+        background-image: url(assets/bg.png);
+        background-color: lightgray 0% 0%;
+        background-size: inherit;
+        background-repeat: repeat;
+    }
+
+    .curriculums-title{
+        text-align: center;
+        font-size: 1.625rem;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .curriculums-container{
+        max-width: 357px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .curriculum-card-1{
+        border-radius: 12.772px;
+        border: 0.639px solid #DEF5FF;
+        text-align: center;
+        justify-content: center;
+        padding: 36px 28px;
+        box-shadow: 0px 0px 19.158px 0.639px rgba(0, 0, 0, 0.05) inset;
+        background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    }
+
+    .curriculum-card-2{
+        border-radius: 12.772px;
+        border: 0.639px solid #DEF5FF;
+        text-align: center;
+        justify-content: center;
+        padding: 36px 28px;
+        box-shadow: 0px 0px 19.158px 0.639px rgba(0, 0, 0, 0.05) inset;
+        background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    }
+
+    .curriculum-card-3{
+        border-radius: 12.772px;
+        border: 0.639px solid #DEF5FF;
+        text-align: center;
+        justify-content: center;
+        padding: 36px 28px;
+        box-shadow: 0px 0px 19.158px 0.639px rgba(0, 0, 0, 0.05) inset;
+        background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    }
+
+    .curriculum-title{
+        color: #202020;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 22px;
+        margin-bottom: 0px;
+    }
+    
+    .curriculum-description{
+        color: #808080;
+        font-size: 0.6rem;
+        font-weight: 500;
+        margin-top: 22px;
+        margin-bottom: 0px;
+    }
+
+    .read-more-btn-1{
+        color: #64C8FF;
+        background: none;
+        border: none;
+        font-size: 0.6rem;
+        font-weight: 700;
+        margin-top: 22px;
+        margin-bottom: 0px;
+    }
+    
+    .read-more-btn-2{
+        color: #F0AA00;
+        background: none;
+        border: none;
+        font-size: 0.6rem;
+        font-weight: 700;
+        margin-top: 22px;
+        margin-bottom: 0px;
+    }
+    
+    .read-more-btn-3{
+        color: #8700FF;
+        background: none;
+        border: none;
+        font-size: 0.6rem;
+        font-weight: 700;
+        margin-top: 22px;
         margin-bottom: 0px;
     }
 }
