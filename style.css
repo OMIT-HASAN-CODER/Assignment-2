@@ -10,12 +10,13 @@
     padding: 0px;
 }
 
+
+
+/* shared styles */
 .hide{
     display: none;
 }
 
-
-/* shared styles */
 .display-flex{
   display: flex;
 }
@@ -798,7 +799,7 @@ header{
         margin-bottom: 20px;
     }
 
-    /*  */
+    /* second stories styles */
 
     .second-story-card{
         width: 173px;
@@ -837,7 +838,7 @@ header{
         margin: 0px 32px 19px 22px;
     }
 
-    /*  */
+    /* third stories styles */
 
     .third-story-card{
         display: block;
@@ -877,7 +878,7 @@ header{
         margin: 0px 32px 19px 22px;
     }
 
-    /*  */
+    /* forth stories styles */
 
     .forth-story-card{
         width: 173px;
@@ -916,7 +917,7 @@ header{
         margin: 0px 32px 19px 22px;
     }
 
-    /*  */
+    /* fifth stories styles */
 
     .fifth-story-card{
         width: 173px;
@@ -962,6 +963,7 @@ header{
         text-align: center;
         background-color: #111;
         border-radius: 18px;
+        border: none;
         color: #fff;
         font-size: 1rem;
         font-weight: 700;
@@ -969,8 +971,9 @@ header{
         margin: 0px auto 40px auto;
     }
 
+    /* footer styles */
+
     .footer{
-        margin: 0px auto;
         padding-top: 40px;
         flex-direction: column;
     }
