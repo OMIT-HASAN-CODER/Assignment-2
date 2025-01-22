@@ -143,7 +143,7 @@ header{
 .curriculums{
     background-image: url(assets/bg.png);
     background-color: lightgray 50%;
-    background-size: cover;
+    background-size: 105%;
     background-repeat: no-repeat;
     flex-direction: column;
 }
@@ -516,6 +516,84 @@ header{
 
 
 
+/* footer styles */
+.footer{
+    max-width: 1440px;
+    margin: 0px auto;
+    background-color: #01ACFD;
+}
+
+.footer-container{
+    flex: 1;
+}
+
+.footer-ins-info{
+    align-items: center;
+    margin: 123px 0px 35px 140px;
+    gap: 10px;
+}
+
+.footer-ins-title{
+    color: #ffffff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    width: 206px;
+    line-height: 39px;
+}
+
+.footer-ins-description{
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 399px;
+    margin: 0px 172px 179px 147px;
+}
+
+.about-links-container{
+    margin: 123px 143px 174px 0px;
+}
+
+.about-title{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.about-item{
+    list-style: none;
+    margin-top: 0px;
+}
+
+.margin{
+    margin-bottom: 20px;
+}
+
+.about-link{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.social-links-container{
+    margin: 127px 228px 294px 0px;
+}
+
+.social-links-title{
+    color: #ffffff;
+    font-size: 1.625rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.social-links{
+    gap: 10px;
+}
+
+
+
+
 /* responsive styles */
 @media screen and (max-width: 576px){
     .ins-name,
@@ -696,7 +774,8 @@ header{
     .stories{
         background: url(assets/bg.png), linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(254, 163, 1, 0.30) 100%);
         background-color: lightgray 0% 0%;
-        background-size: inherit;
+        background-position: 50px 50px 0px 0px;
+        background-size: 200%;
         background-repeat: repeat;
     }
 
@@ -888,5 +967,80 @@ header{
         font-weight: 700;
         padding: 10px;
         margin: 0px auto 40px auto;
+    }
+
+    .footer{
+        margin: 0px auto;
+        padding-top: 40px;
+        flex-direction: column;
+    }
+
+    .footer-ins-info{
+        align-items: center;
+        margin: 25px 123px 23px 16px;
+        gap: 8px;
+    }
+
+    .footer-ins-img{
+        max-width: 69px;
+        max-height: 69px;
+    }
+    
+    .footer-ins-title{
+        color: #ffffff;
+        font-size: 2.2rem;
+        font-weight: 700;
+        width: 172px;
+        line-height: 33px;
+    }
+    
+    .footer-ins-description{
+        color: #ffffff;
+        font-size: 1.25rem;
+        font-weight: 400;
+        width: 357px;
+        margin: 0px 12px 32px 21px;
+    }
+    
+    .about-links-container{
+        margin: 0px 241px 32px 20px;
+    }
+    
+    .about-title{
+        color: #ffffff;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 27px;
+    }
+    
+    .about-item{
+        list-style: none;
+        margin-top: 0px;
+    }
+    
+    .margin{
+        margin-bottom: 17px;
+    }
+    
+    .about-link{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    .social-links-container{
+        margin: 0px 222px 60px 20px;
+    }
+    
+    .social-links-title{
+        color: #ffffff;
+        font-size: 1.375rem;
+        font-weight: 700;
+        margin-bottom: 36px;
+    }
+    
+    .social-links{
+        gap: 8px;
     }
 }
