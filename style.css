@@ -94,6 +94,7 @@ header{
     color: #ffffff;
     font-size: 1.25rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .marquee-container{
@@ -136,6 +137,7 @@ header{
     color: #ffffff;
     font-size: 1.25rem;
     font-weight: 700;
+    cursor: pointer;
 }
 
 
@@ -222,6 +224,7 @@ header{
     font-weight: 700;
     margin-top: 32px;
     margin-bottom: 0px;
+    cursor: pointer;
 }
 
 .read-more-btn-2{
@@ -232,6 +235,7 @@ header{
     font-weight: 700;
     margin-top: 32px;
     margin-bottom: 0px;
+    cursor: pointer;
 }
 
 .read-more-btn-3{
@@ -242,6 +246,7 @@ header{
     font-weight: 700;
     margin-top: 32px;
     margin-bottom: 0px;
+    cursor: pointer;
 }
 
 .btn-container{
@@ -262,12 +267,11 @@ header{
     color: #ffffff;
     font-size: 1.5rem;
     font-weight: 900;
+    cursor: pointer;
 }
 
-.arrow-btn span{
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: 900;
+.arrow-btn:hover{
+    background-color: #111;
 }
 
 
@@ -508,11 +512,13 @@ header{
     text-align: center;
     background-color: #111;
     border-radius: 12px;
+    border: none;
     color: #fff;
     font-size: 1.25rem;
     font-weight: 700;
     padding: 10px 58px;
     margin: 80px auto 60px auto;
+    cursor: pointer;
 }
 
 
@@ -661,6 +667,7 @@ header{
         color: #ffffff;
         font-size: 1rem;
         font-weight: 700;
+        cursor: pointer;
     }
 
     .banner-img{
@@ -748,6 +755,7 @@ header{
         font-weight: 700;
         margin-top: 22px;
         margin-bottom: 0px;
+        cursor: pointer;
     }
     
     .read-more-btn-2{
@@ -758,6 +766,7 @@ header{
         font-weight: 700;
         margin-top: 22px;
         margin-bottom: 0px;
+        cursor: pointer;
     }
     
     .read-more-btn-3{
@@ -768,6 +777,7 @@ header{
         font-weight: 700;
         margin-top: 22px;
         margin-bottom: 0px;
+        cursor: pointer;
     }
 
     /* stories styles */
@@ -969,6 +979,7 @@ header{
         font-weight: 700;
         padding: 10px;
         margin: 0px auto 40px auto;
+        cursor: pointer;
     }
 
     /* footer styles */
